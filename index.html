@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easyMath</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="main">
+        <section class="settings" id="firstSlide">
+            <p class="aboutGame">*in this game, you can test your math skills, author: Ev1art</p>
+            <div class="setValue">
+                <label for="minValue">Min: </label>
+                <input type="number" class="minValue" id="minValue" value="0">
+                <label for="maxValue">Max: </label>
+                <input type="number" class="maxValue" id="maxValue" value="100">
+            </div>
+            <button class="startBtn" id="start-btn">Start</button>
+            <div class="timerBtnContainer">
+                <p>Timer</p>
+                <button class="timerBtn" id="timerBtn"></button>
+            </div>
+        </section>
+        <section class="game" id="secondSlide">
+            <p class="text">
+                <span class="firstNum" id="firstNum"></span>
+                <span class="symbol" id="symbol">+</span>
+                <span class="secondNum" id="secondNum"></span>
+                <span class="equel">=</span>
+                <input class="answer" id="answer" type="text">
+            </p>
+            <div class="buttons">
+                <button class="enterAnswerBtn" id="enter-answer-btn">Enter</button>
+                <!--   <button class="showAnswerBtn" id="show-answer-btn">Show answer</button>   -->
+            </div>
+            <div class="counter">
+                <p class="correctAnswer">Correct: <span id="answers">0</span></p>
+                <div id="timer" class="timer">
+                    <p class="time">
+                        <span class="minutes" id="minutes">00</span>
+                        <span class="dots">:</span>
+                        <span class="seconds" id="seconds">00</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
